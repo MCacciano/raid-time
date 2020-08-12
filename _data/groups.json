@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Group 1",
+    "slug": "group-1",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda alias nulla. Maiores, fugit quas modi fuga soluta ad cum."
+  },
+  {
+    "name": "Group 2",
+    "slug": "group-2",
+    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, ipsam."
+  },
+  {
+    "name": "Group 3",
+    "slug": "group-3",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat et animi suscipit quasi. Blanditiis qui architecto est iste, labore nihil eaque, excepturi a officiis, tempora consequatur dolore voluptate eveniet!"
+  },
+  {
+    "name": "Group 4",
+    "slug": "group-4",
+    "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia, accusantium!"
+  }
+]

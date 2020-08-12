@@ -4,6 +4,8 @@ const morgan = require('morgan');
 const colors = require('colors');
 const connectDB = require('./config/db');
 
+const errorHandler = require('./middleware/error');
+
 // config
 dotenv.config({ path: 'config/.env' });
 
@@ -11,10 +13,13 @@ dotenv.config({ path: 'config/.env' });
 connectDB();
 
 // import routers
-const mountRouter = require('./routes/mounts');
+const groupsRouter = require('./routes/groups');
 
 // init app
 const app = express();
+
+// express body parser
+app.use(express.json());
 
 // dev logging middleware
 if (process.env.NODE_ENV === 'development') {
@@ -22,7 +27,10 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // mount routers
-app.use('/api/v1/funkos', funkoRouter);
+app.use('/api/v1/groups', groupsRouter);
+
+// errorHandler middleware
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
